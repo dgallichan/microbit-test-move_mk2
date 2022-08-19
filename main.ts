@@ -50,6 +50,13 @@ radio.onReceivedValue(function (name, value) {
             `)
         basic.pause(showTime)
     }
+    basic.showLeds(`
+        . # . # .
+        # . . . #
+        . . # . .
+        # . . . #
+        . # . # .
+        `)
 })
 let showTime = 0
 let forwardSpeed = 0
