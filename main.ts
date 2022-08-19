@@ -11,11 +11,11 @@ radio.onReceivedValue(function (name, value) {
         basic.pause(showTime)
     } else if (name == "stop") {
         kitronik_servo_lite.stop()
-    } else if (name == "turnSpeed") {
+    } else if (name == "tSpeed") {
         turnSpeed = value
         basic.showNumber(value)
         music.playSoundEffect(music.builtinSoundEffect(soundExpression.happy), SoundExpressionPlayMode.UntilDone)
-    } else if (name == "forwardSpeed") {
+    } else if (name == "fSpeed") {
         forwardSpeed = value
         music.playSoundEffect(music.builtinSoundEffect(soundExpression.giggle), SoundExpressionPlayMode.UntilDone)
         basic.showNumber(value)
@@ -29,7 +29,7 @@ radio.onReceivedValue(function (name, value) {
             . . # . .
             `)
         basic.pause(showTime)
-    } else if (name == "turnRight") {
+    } else if (name == "turnR") {
         kitronik_servo_lite.right()
         basic.showLeds(`
             # # # # .
@@ -39,7 +39,7 @@ radio.onReceivedValue(function (name, value) {
             # . . . .
             `)
         basic.pause(showTime)
-    } else if (name == "turnLeft") {
+    } else if (name == "turnL") {
         kitronik_servo_lite.left()
         basic.showLeds(`
             . # # # #
